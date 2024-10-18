@@ -1,5 +1,3 @@
-# Tokyo Night Moon Theme for Zen Browser 🌙
+# Shatterland Theme for Zen Browser
 
-A dark theme inspired by folke's Tokyo Night Moon color palette
-
-![Tokyo Night Moon Preview](./preview.png)
+A dark theme based on my personal Shatterland Theme.
