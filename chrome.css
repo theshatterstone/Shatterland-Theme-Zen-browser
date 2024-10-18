@@ -1,10 +1,27 @@
-    --zen-colors-primary: #82aaff !important;
-    --zen-colors-secondary: #c099ff !important;
-    --zen-colors-tertiary: #1e2030 !important;
-    --zen-colors-border: #3b4261 !important;
-    --zen-dialog-background: #222436 !important;
-
-    .tab-background[selected=''] {
-        background-color: #6c598c !important;
+:root {
+    /* I don't know what any of these really do */
+    --zen-primary-color: #51afef !important;
+    --zen-colors-primary: #51afef !important;
+    --zen-colors-secondary: #51afef !important;
+    --zen-colors-tertiary: #282c34 !important;
+    --zen-colors-border: #343434 !important;
+    --zen-dialog-background: #282c34 !important;
+    
+    --toolbarbutton-icon-fill: color-mix(in srgb, var(--zen-primary-color) 70%, white 30%) !important;
+    --toolbar-field-color: color-mix(in srgb, var(--zen-primary-color) 40%, white 60%) !important;
+    
+    /* Unfocused Tab Name colour; bg is #282c34 -5 in each of RGB */
+    .tabbrowser-tab { color: #51afef !important; background-color: #232729 !important;}
+    
+    /* Focused Tab Name colour*/
+    .tabbrowser-tab:is([visuallyselected], [multiselected]) { 
+        color: #dfdfdf !important; 
+        background-color: #282c34 !important;
     }
+    
+    /* Focused Tab BG Colour (doing it here sort-of avoids the border */
+    .tab-background[selected=''] {
+        background-color: #282c34 !important;
+    }
+}
 
